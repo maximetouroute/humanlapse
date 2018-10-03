@@ -1,0 +1,95 @@
+@import './../../styles/breakpoints.scss';
+@import './../../styles/mixins.scss';
+@import './../../styles/theme.scss';
+@import './../../styles/globals.scss';
+
+.Menu {
+
+  background-color: $backgroundColor;
+  .gridWrapper {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    // todo: DIRTY WAY of handling title on MenuPage
+    height: 70vh;
+  }
+
+  .menuGrid {
+    @include fade-in(1s);
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    .item {
+      @extend .Globals-clickable;
+      @extend .Globals-noselect;
+      padding: 1rem;
+      margin: 1rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $idleWhite;
+      box-shadow: inset 0 0 0 1px $idleWhite;
+      display: grid;
+      align-items: center;
+
+      @media #{$lt-sm} {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      @media #{$gt-xs} {
+        width: 30%;
+        max-width: 600px;
+
+        @media #{$height-sm} {
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
+        @media #{$height-normal} {
+          padding-top: 2.5rem;
+          padding-bottom: 2.5rem;
+        }
+      }
+
+      @include animation-ease(0.2s);
+      &:hover {
+        box-shadow: inset 0 0 0 1px $pureWhite;
+        color: white;
+        @include animation-ease(0.2s);
+      }
+      &:active {
+        color: white;
+        box-shadow: inset 0 0 0 6px $idleWhite;
+        @include animation-ease(0.03s);
+      }
+    }
+  }
+
+  .gridMiddleCentered {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: start;
+    justify-items: center;
+    justify-self: center;
+
+    @include animation-ease(1s);
+    @media #{$lt-sm} {
+      width: 100%
+    }
+    @media #{$gt-xs} {
+      width: 100%;
+      max-width: 900px;
+    }
+  }
+
+}
