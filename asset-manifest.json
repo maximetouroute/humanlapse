@@ -1,7 +1,7 @@
 {
   "main.css": "/humanlapse/static/css/main.c340df90.chunk.css",
-  "main.js": "/humanlapse/static/js/main.802eef2e.chunk.js",
-  "main.js.map": "/humanlapse/static/js/main.802eef2e.chunk.js.map",
+  "main.js": "/humanlapse/static/js/main.dc0986e6.chunk.js",
+  "main.js.map": "/humanlapse/static/js/main.dc0986e6.chunk.js.map",
   "static/js/1.299bb87d.chunk.js": "/humanlapse/static/js/1.299bb87d.chunk.js",
   "static/js/1.299bb87d.chunk.js.map": "/humanlapse/static/js/1.299bb87d.chunk.js.map",
   "runtime~main.js": "/humanlapse/static/js/runtime~main.3d2cdeb2.js",
@@ -10,6 +10,6 @@
   "static/media/Humanlapse.css": "/humanlapse/static/media/arrow-left.88b1bb5f.svg",
   "static/css/main.c340df90.chunk.css.map": "/humanlapse/static/css/main.c340df90.chunk.css.map",
   "index.html": "/humanlapse/index.html",
-  "precache-manifest.3ca99ac7a2ee56f8aa95099d72a9b489.js": "/humanlapse/precache-manifest.3ca99ac7a2ee56f8aa95099d72a9b489.js",
+  "precache-manifest.9eca9df27aac6993e289a19b60e95fd3.js": "/humanlapse/precache-manifest.9eca9df27aac6993e289a19b60e95fd3.js",
   "service-worker.js": "/humanlapse/service-worker.js"
 }
