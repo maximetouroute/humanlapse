@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './MenuPage.css';
-import {homepageContent, humanlapseGallery} from "../../content/content";
-import {Menu} from './../../components/Menu/Menu';
+import './menuPage.css';
+import {homepageContent, contentPages} from "../../content/content";
+import Menu from '../../components/menu/menu';
 
 
 export default class MenuPage extends Component {
@@ -9,7 +9,7 @@ export default class MenuPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            gallery: humanlapseGallery
+            gallery: contentPages
         };
     }
 
@@ -24,7 +24,7 @@ export default class MenuPage extends Component {
     }
 
     buttonClickedForName(name) {
-        this.props.history.push('/humanlapse/' + this.getKeyForName(name))
+        this.props.history.push(process.env.PUBLIC_URL +'/content/' + this.getKeyForName(name))
     }
 
 
@@ -32,7 +32,7 @@ export default class MenuPage extends Component {
         const names = Object.keys(this.state.gallery).map(key => this.state.gallery[key].name);
 
         return (
-            <div className="MenuPage">
+            <div className="menuPage">
                 <div className="message">
                     <div className="text big">{homepageContent.title}</div>
                     <div className="text small">{homepageContent.subtitle}</div>

@@ -2,8 +2,11 @@
 @import '../../styles/mixins.scss';
 @import './../../styles/theme.scss';
 @import './../../styles/globals.scss';
+@import './../../styles/ui-elements.scss';
 
-.Home {
+.homePage {
+
+  @include fade-in(1s);
 
   .mainGrid {
     display: grid;
@@ -18,8 +21,9 @@
     height: 100vh;
     display: grid;
     align-items: center;
-    color: $pureWhite;
+    color: $mainColor;
     padding: 1rem;
+
 
     .text {
       text-align: center;
@@ -35,7 +39,7 @@
 
       &.small {
         font-size: 1.5em;
-        color: $idleWhite;
+        color: $mainColorIdle;
       }
     }
   }
@@ -52,12 +56,12 @@
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     margin: 1em;
-    box-shadow: inset 0 0 0 1px $idleWhite;
+    box-shadow: inset 0 0 0 1px $mainColorIdle;
     text-align: center;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 600;
-    color: $idleWhite;
+    color: $mainColorIdle;
 
     @media #{$lt-sm} {
       width: 85%;
@@ -66,17 +70,7 @@
       width: 14em;
     }
 
-    @include animation-ease(0.2s);
-    &:hover {
-      box-shadow: inset 0 0 0 1px $pureWhite;
-      color: $pureWhite;
-      //@include animation-ease(0.2s);
-    }
-    &:active {
-      color: $idleWhite;
-      box-shadow: inset 0 0 0 5px $idleWhite;
-      @include animation-ease(0.03s);
-    }
+   @include fancyButton();
   }
 
   .fillPage {

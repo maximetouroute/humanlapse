@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import './Menu.css';
+import './menu.css';
 import PropTypes from 'prop-types';
 
-export class Menu extends Component {
+export default class Menu extends Component {
 
     constructor(props) {
         super(props);
@@ -35,7 +35,7 @@ export class Menu extends Component {
 
     render() {
         return (
-            <div className="Menu">
+            <div className="menu">
                 <div className="gridWrapper">
                     <div className="gridMiddleCentered">
                         {this.menuItems()}

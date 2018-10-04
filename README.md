@@ -1,16 +1,14 @@
-## Humanlapse showcase website
+## ContentPage showcase website
 
-Tear down version of [PhotoBook Template]() for the Humanlapse Project
+Tear down version of [PhotoBook Template]() for the ContentPage Project
 
 * The plan is to reach a fully generic layout and theme with content injection
 
 
 # Todolist
 * CSS is a MESS - factorise CSS properly
-* clean Layout of homepage/index page with bad 70vh height in menu component
 * what happens when video loads?
-* loading for video - lazy loading for entire app ?
-* find correct codec ? load first frame and then video ? how to choose qualityyy
+* add some transitions
 
 
 

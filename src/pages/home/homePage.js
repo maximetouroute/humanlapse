@@ -1,22 +1,20 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
-import './Home.css';
-import {homePunchline, photographerName} from './../../content/content';
-import PropTypes from 'prop-types';
+import './homePage.css';
 import {homepageContent} from "./../../content/content";
 
-export class Home extends Component {
+export class HomePage extends Component {
 
     render() {
         return (
-            <div className="Home">
+            <div className="homePage">
                 <div className="mainGrid">
                     <div className="message">
                         <div>
                             <div className="text big">{homepageContent.title}</div>
                             <div className="text small">{homepageContent.subtitle}</div>
                         </div>
-                        <Link to={process.env.PUBLIC_URL + '/index'} className="button">GET IN</Link>
+                        <Link to={process.env.PUBLIC_URL + '/index'} className="button">Get in</Link>
                     </div>
 
                 </div>
@@ -24,8 +22,3 @@ export class Home extends Component {
         );
     }
 }
-
-
-Home.propTypes = {
-    slideshow: PropTypes.array.isRequired
-};

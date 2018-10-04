@@ -3,18 +3,22 @@
 @import './../../styles/theme.scss';
 @import './../../styles/globals.scss';
 
-.MenuPage {
+.menuPage {
+  min-height: 100vh;
+  //background-color: lightsteelblue;
+  display: flex;
+  flex-direction: column;
 
   .message {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     padding-right: 1rem;
     padding-left: 1rem;
     width: calc(100% - 2rem);
     display: grid;
     align-items: start;
     justify-items: center;
-    color: $pureWhite;
+    color: $mainColor;
 
     .text {
       text-align: center;
@@ -22,15 +26,13 @@
 
       &.big {
         font-weight: 400;
-        @media #{$gt-sm} {
-          margin-bottom: 0.5em;
-        }
+        margin-bottom: 0.5em;
         text-transform: uppercase;
       }
 
       &.small {
         font-size: 1.5em;
-        color: $idleWhite;
+        color: $mainColorIdle;
       }
     }
   }
