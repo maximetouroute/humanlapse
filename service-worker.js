@@ -15,7 +15,7 @@ importScripts("/humanlapse/workbox-v3.6.2/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/humanlapse/workbox-v3.6.2"});
 
 importScripts(
-  "/humanlapse/precache-manifest.df80b8b5fd7b2f5d5fba336a45ebf61f.js"
+  "/humanlapse/precache-manifest.9c91a4c24329241bef7fadaf612b3d34.js"
 );
 
 workbox.clientsClaim();
