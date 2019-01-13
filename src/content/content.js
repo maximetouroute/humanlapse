@@ -118,11 +118,20 @@ const aboutPage = (<div style={{
         }}/>
 
         <div style={{fontSize:'1.2rem', textAlign:'center'}}>
-            I've created this project in 2018 with the goal of making portrait timelapses more popular.
-            <br/><br/>
-            <a href="https://maximetouroute.github.io/humanlapseProject/">Exhibitions and Scenography infos here</a>
-            <br/><br/>
-           I work on plenty of other projects ! You can check it out on my <a href="https://maximetouroute.github.io">portfolio website</a>
+            I've created this project in 2018 with the goal of bringing portrait timelapses closer to mainstream.
+            <br/>
+            <br/>
+
+            <h3>Interested in the project ?</h3>
+            You can reach me at maxime.touroute@gmail.com for exhibition & collaboration inquiries.
+            <br/>
+            <br/>
+            <a href="https://maximetouroute.github.io/humanlapseProject/">Exhibitions and Scenography material</a>
+            <br/>
+            <br/>
+            <br/>
+            <h3>Besides that...</h3>
+            I work on many other projects ! You can check it out on my <a href="https://maximetouroute.github.io">Portfolio website</a>
         </div>
     </div>
 );
