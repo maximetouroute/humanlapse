@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/humanlapse/static/media/ADA5_EDITSINGLE.5c675515.mp4"
   },
   {
-    "revision": "76c370b8844a9d54e101",
+    "revision": "96c6cfa91a47b2c57702",
     "url": "/humanlapse/static/css/main.8c8b653a.chunk.css"
   },
   {
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/humanlapse/static/media/FFO12_EDITSINGLE.1ccf2d05.mp4"
   },
   {
-    "revision": "76c370b8844a9d54e101",
-    "url": "/humanlapse/static/js/main.76c370b8.chunk.js"
+    "revision": "96c6cfa91a47b2c57702",
+    "url": "/humanlapse/static/js/main.96c6cfa9.chunk.js"
   },
   {
     "revision": "b0b1abaa656ba4fca96dcaa8eda4aff5",
@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/humanlapse/static/media/arrow-right.8c1d11f2.svg"
   },
   {
-    "revision": "17e846f77c0fc1c5992be1f964e9541e",
+    "revision": "689d0c0331047db38199e3f8679f0eec",
     "url": "/humanlapse/index.html"
   }
 ];
