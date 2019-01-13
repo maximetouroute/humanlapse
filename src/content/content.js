@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profilePicture from'./../res/profile.jpg';
+
 // Zoom in zoom out
 import z1 from './../res/book/zoomInZoomOut/CSU6_EDITSINGLE.mp4'
 import z2 from './../res/book/zoomInZoomOut/DVI2_EDITSINGLE.mp4'
@@ -9,6 +9,7 @@ import z4 from './../res/book/zoomInZoomOut/SPHA1_EDITSINGLE.mp4'
 import z5 from './../res/book/zoomInZoomOut/CRO3_EDITSINGLE.mp4'
 import z6 from './../res/book/zoomInZoomOut/DVI6_EDITSINGLE.mp4'
 import z7 from './../res/book/zoomInZoomOut/CRO7_EDITSINGLE.mp4'
+import z8 from './../res/book/zoomInZoomOut/ADA2.mp4';
 
 // Moving portraits
 import m1 from './../res/book/movingPortraits/AAN2_EDITSINGLE.mp4'
@@ -19,11 +20,14 @@ import m5 from './../res/book/movingPortraits/EGO1_EDITSINGLE.mp4'
 import m6 from './../res/book/movingPortraits/SPHB1_EDITSINGLE.mp4'
 import m7 from './../res/book/movingPortraits/SPHB2_EDITSINGLE.mp4'
 import m8 from './../res/book/movingPortraits/FFO12_EDITSINGLE.mp4'
+import m9 from './../res/book/movingPortraits/ADA5_EDITSINGLE.mp4'
+import m10 from './../res/book/movingPortraits/FBO9_EDITSINGLELOW.mp4'
 
 // Time travelers
 import t1 from './../res/book/timeTravellers/FFO11_EDITSINGLE.mp4'
 import t2 from './../res/book/timeTravellers/EGOM2_EDITSINGLE2.mp4'
 import t3 from './../res/book/timeTravellers/CRO5B_EDITSINGLE2.mp4'
+import t4 from './../res/book/timeTravellers/LNE7_EDITSINGLE.mp4'
 
 
 // Stop motion
@@ -33,6 +37,12 @@ import s3 from './../res/book/stopMotion/SPHA2_EDITSINGLE.mp4'
 import s4 from './../res/book/stopMotion/FFO9_EDITSINGLE.mp4'
 import s5 from './../res/book/stopMotion/AAN7_EDITSINGLE.mp4'
 import s6 from './../res/book/stopMotion/EGO3_EDITSINGLE.mp4'
+import s7 from './../res/book/stopMotion/ADA6.mp4'
+import s8 from './../res/book/stopMotion/FBO10.mp4'
+
+import ReactPlayer from "react-player";
+
+import videoProfile from './../res/profile.mp4'
 
 
 export const ContentTypes = Object.freeze({
@@ -55,30 +65,36 @@ const zoomInZoomOutContent = [
     humanlapseCreate(z3, 'Joséphine'),
     humanlapseCreate(z4, 'Salomé'),
     humanlapseCreate(z5, 'Charlotte'),
+    humanlapseCreate(z8, 'Ada'),
     humanlapseCreate(z7, 'Charlotte')
 ];
 
 const motionPortraitsContent = [
-    humanlapseCreate(m1, 'Sarah et Anddy'),
-    humanlapseCreate(m2, 'Sarah et Anddy'),
-    humanlapseCreate(m3, 'Sarah et Anddy'),
-    humanlapseCreate(m4, 'Delphine'),
+    humanlapseCreate(m9, 'Ada'),
+    humanlapseCreate(m10, 'Florent'),
     humanlapseCreate(m5, 'Eva'),
     humanlapseCreate(m6, 'Salomé'),
     humanlapseCreate(m7, 'Salomé'),
-    humanlapseCreate(m8, 'Florent')
+    humanlapseCreate(m8, 'Florent'),
+    humanlapseCreate(m1, 'Sarah et Anddy'),
+    humanlapseCreate(m2, 'Sarah et Anddy'),
+    humanlapseCreate(m3, 'Sarah et Anddy'),
+
 ];
 
 const timetravelersContent = [
     humanlapseCreate(t1, 'Florent'),
-    humanlapseCreate(t2, 'Eva'),
-    humanlapseCreate(t3, 'Charlotte')
+    humanlapseCreate(t3, 'Charlotte'),
+    humanlapseCreate(t4, 'Laure'),
+    humanlapseCreate(t2, 'Eva')
 ];
 
 const experimentContent = [
     humanlapseCreate(s1, 'Eva'),
+    humanlapseCreate(s8, 'Florent'),
     humanlapseCreate(s2, 'Charlotte'),
     humanlapseCreate(s3, 'Salomé'),
+    humanlapseCreate(s7, 'Ada'),
     humanlapseCreate(s4, 'Florent'),
     humanlapseCreate(s6, 'Eva'),
     humanlapseCreate(s5, 'Sarah et Anddy')
@@ -96,12 +112,17 @@ const aboutPage = (<div style={{
     }}>
 
         <h3 style={{fontSize: '2rem'}}>Hi, I'm Maxime</h3>
-        <img src= {profilePicture} alt="profile" width="200px" style={{
-            borderRadius: '2000px',
-            margin: '2rem'
+        <ReactPlayer url={videoProfile} loop={true} width={'80%'} height={'80%'} playing style={{
+            marginTop: '1rem',
+            marginBottom: '2rem'
         }}/>
-        <div style={{fontSize:'1.4rem', textAlign:'center'}}>
-            I've created the Humanlapse project and I do plenty of other stuff ! <br/>You can check it out on my <a href="https://maximetouroute.github.io">portfolio website</a>
+
+        <div style={{fontSize:'1.2rem', textAlign:'center'}}>
+            I've created this project in 2018 with the goal of making portrait timelapses more popular.
+            <br/><br/>
+            <a href="https://maximetouroute.github.io/humanlapseProject/">Exhibitions and Scenography infos here</a>
+            <br/><br/>
+           I work on plenty of other projects ! You can check it out on my <a href="https://maximetouroute.github.io">portfolio website</a>
         </div>
     </div>
 );
@@ -154,7 +175,7 @@ export const contentPages = {
 
     AboutMe: {
         contentType: ContentTypes.JSX,
-        name:"Who makes these ?",
+        name:"About this project",
         jsx:aboutPage
     }
 };
