@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/humanlapse/static/media/arrow-right.8c1d11f2.svg"
   },
   {
-    "revision": "689d0c0331047db38199e3f8679f0eec",
+    "revision": "92678d796f6c5c732505104b939c1027",
     "url": "/humanlapse/index.html"
   }
 ];
