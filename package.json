@@ -5,12 +5,14 @@
   "homepage": "https://maximetouroute.github.io/humanlapse/",
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
+    "prop-types": "^15.6.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-image-lightbox": "^5.1.0",
     "react-player": "^1.6.6",
+    "react-router": "latest",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^2.0.1",
-    "react-router": "latest"
+    "react-scripts": "^2.0.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -35,5 +37,3 @@
     "not op_mini all"
   ]
 }
-
-

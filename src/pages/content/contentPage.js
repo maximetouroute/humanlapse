@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactPlayer from 'react-player'
+import PhotoGrid from './../../components/photo-grid/PhotoGrid';
 import './contentPage.css';
 import {ContentTypes} from './../../content/content';
 import {contentPages} from './../../content/content'

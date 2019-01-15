@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PhotoGrid from './../components/photo-grid/PhotoGrid';
 
 // Zoom in zoom out
 import z1 from './../res/book/zoomInZoomOut/CSU6_EDITSINGLE.mp4'
@@ -44,6 +44,14 @@ import ReactPlayer from "react-player";
 
 import videoProfile from './../res/profile.mp4'
 
+// About pictures
+import about1 from './../res/about/b-1.jpg';
+import about2 from './../res/about/b-2.jpg';
+import about3 from './../res/about/b-5.jpg';
+import about4 from './../res/about/b-7.jpg';
+import about5 from './../res/about/b-10.jpg';
+import about6 from './../res/about/b-11.jpg';
+import about7 from './../res/about/VDL-logo.jpg';
 
 export const ContentTypes = Object.freeze({
     VIDEO:   Symbol("video"),
@@ -105,7 +113,9 @@ export const homepageContent = {
     subtitle: `Timelapses of Humans.`
 };
 
-const aboutPage = (<div style={{
+const aboutPage = (
+    <>
+    <div style={{
     display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
@@ -123,17 +133,42 @@ const aboutPage = (<div style={{
             <br/>
 
             <h3>Interested in the project ?</h3>
-            You can reach me at maxime.touroute@gmail.com for exhibition & collaboration inquiries.
-            <br/>
-            <br/>
-            <a href="https://maximetouroute.github.io/humanlapseProject/">Exhibitions and Scenography material</a>
-            <br/>
-            <br/>
-            <br/>
-            <h3>Besides that...</h3>
-            I work on many other projects ! You can check it out on my <a href="https://maximetouroute.github.io">Portfolio website</a>
+           Don't hesitate to reach me at <em style={{textDecoration:'underline'}}>maxime.touroute@gmail.com</em> for exhibition & collaboration inquiries.
+            <br/><br/><br/>
+            .
+            <br/><br/><br/>
+            .
+            <br/><br/><br/>
+            .
+            <br/><br/><br/>
+            <h3>Exhibitions and Scenography</h3>
+            To exhibit this work, a first installation has been designed based on homemade built wood video frames.
+            These frames have been exhibited at the Lyon city hall following a contest.
+
         </div>
     </div>
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+        }}>
+        <ReactPlayer url={"https://player.vimeo.com/video/306033197"} loop={false} width={'80%'}  style={{
+            marginTop: '1rem',
+            marginBottom: '2rem'
+        }}/>
+        </div>
+
+        <PhotoGrid images={[about7, about2, about3, about6, about1, about5, about4]}>
+        </PhotoGrid>
+
+
+        <div style={{fontSize:'1.2rem', textAlign:'center'}}>
+            <em style={{textDecoration:'underline'}}>maxime.touroute@gmail.com</em>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </>
 );
 
 export const contentPages = {
