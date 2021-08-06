@@ -109,7 +109,7 @@ const experimentContent = [
 ];
 
 export const homepageContent = {
-    title: <>The <strong>Human</strong>lapse project</>,
+    title: <><strong>Human</strong>lapse</>,
     subtitle: `Timelapses of Humans.`
 };
 
@@ -132,41 +132,16 @@ const aboutPage = (
             <br/>
             <br/>
 
-            <h3>Interested in the project ?</h3>
-           Don't hesitate to reach me at <em style={{textDecoration:'underline'}}>maxime.touroute@gmail.com</em> for exhibition & collaboration inquiries.
-            <br/><br/><br/>
-            .
-            <br/><br/><br/>
-            .
-            <br/><br/><br/>
-            .
-            <br/><br/><br/>
-            <h3>Exhibitions and Scenography</h3>
-            To exhibit this work, a first installation has been designed based on homemade built wood video frames.
-            These frames have been exhibited at the Lyon city hall following a contest.
-
+            <a href="https://maximetouroute.github.io/humanlapseProject">More about Humanlapses</a>
+            <br/>
+            <br/>
+            <a href="https://maximetouroute.github.io/">More about me</a>
+            <br/>
+            <br/>
+            <a href="mailto:maxime.touroute@gmail.com">Reach me</a>
+            <br/>
+            <br/>
         </div>
-    </div>
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
-        }}>
-        <ReactPlayer url={"https://player.vimeo.com/video/306033197"} loop={false} width={'80%'}  style={{
-            marginTop: '1rem',
-            marginBottom: '2rem'
-        }}/>
-        </div>
-
-        <PhotoGrid images={[about7, about2, about3, about6, about1, about5, about4]}>
-        </PhotoGrid>
-
-
-        <div style={{fontSize:'1.2rem', textAlign:'center'}}>
-            <em style={{textDecoration:'underline'}}>maxime.touroute@gmail.com</em>
-            <br/>
-            <br/>
-            <br/>
         </div>
     </>
 );
@@ -180,7 +155,7 @@ export const contentPages = {
             to create video based on a burst of pictures.
             It is widely used in landscape photography, architecture and cityscape photography.
             However, this technique is rarely used to shoot human subjects. This
-            project is about filling this gap by making timelapses of <strong>humans</strong>.<br/><br/> We call them <strong>humanlapses</strong>.
+            project is about filling the gap by making timelapses of <strong>humans</strong>.
         </>,
         mediaGallery: [
             {
@@ -219,7 +194,7 @@ export const contentPages = {
 
     AboutMe: {
         contentType: ContentTypes.JSX,
-        name:"About this project",
+        name:"About",
         jsx:aboutPage
     }
 };
