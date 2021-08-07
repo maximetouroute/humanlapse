@@ -11,11 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("/humanlapse/workbox-v3.6.2/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/humanlapse/workbox-v3.6.2"});
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/humanlapse/precache-manifest.6f73a8b18ba80b97e0eefbe8f2cc1539.js"
+  "/humanlapse/precache-manifest.59687eff12b257e68251a94328b804bc.js"
 );
 
 workbox.clientsClaim();
@@ -31,5 +30,5 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/humanlapse/index.html", {
   
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
